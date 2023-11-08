@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSHIRTCHADS</title>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="indigo lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Зафутболься</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="indexcontact.html">Контакты </a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="indexcontact.html">Контакты</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">Меню</i></a
+        >
+      </div>
+    </nav>
+  </div>
+
+  <section class="parallax-container">
+    <div class="container">
+      <div class="row container">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Имя</label>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Почта</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">Сообщение</label>
+              </div>
+            </div>
+            <a class="waves-effect waves-light white-text btn-large col s3">Подтвердить </a>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+</div>
+</section>
+
+  </section>
+  <footer class="page-footer indigo">
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <h5 class="white-text">Меню</h5>
+          <ul>
+            <li><a class="white-text" href="#">Главная</a></li>
+            <li><a class="white-text" href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col s6 l3 offset-l3">
+          <h5 class="white-text">Соц. сети</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a class="white-text" href="https://twitter.com/">Twitter</a>
+            </li>
+            <li>
+              <a class="white-text" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">Made for aues practice</div>
+    </div>
+  </footer>
+
+  <script src="js/materialize.min.js"></script>
+  <script>        
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var options = {
+            throttle:500,
+            scrollOffset:5,
+            activeClass:'active',
+            getActiveElement: function(id) {
+                return 'a[href="#' + id + '"]';
+            }
+        }
+        var instances = M.ScrollSpy.init(elems,options);
+    });
+  </script> 
+</body>
+</html>
